@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { QuestionnaireComponent } from './questionnaire/questionnaire.component'
 
 import { ROUTES } from './app.routes';
 
@@ -16,7 +17,8 @@ import { CallbackComponent } from './callback/callback.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    CallbackComponent
+    CallbackComponent,
+    QuestionnaireComponent
   ],
   imports: [
     BrowserModule,
