@@ -1,6 +1,15 @@
-<p>
-  q page!!!!
-</p>
-<p *ngFor="let item of qArr">
-  q: {{item.question}} a1: {{item.answers[0]}} a2: {{item.answers[1]}}
-</p>
+<div *ngFor="let item of qArr" class="container">
+  <h1>{{item.question}}</h1>
+  <form>
+    <div *ngFor="let option of item.answers; let i = index" class="form-check">
+      <label class="form-check-label">
+        <input type="radio" class="form-check-input" id="name{{i}}" name="{{item.question}}" required>
+          {{option}}
+      </label>
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+
+  </form>
+</div>
+
